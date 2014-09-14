@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>Date Time set at Wed Sept 09 14:16:19 IST 2014</comment>
+	<entry key="db.jdbc.driver">com.mysql.jdbc.Driver</entry>
+	<entry key="db.url">jdbc:mysql://localhost:3306</entry>
+	<entry key="db.name">scent-svc-auth</entry>
+	<entry key="db.user">root</entry>
+	<entry key="db.password">root</entry>
+	<entry key="hibernate.show.sql">true</entry>
+	<entry key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</entry>
+	<entry key="hibernate.hbm2ddl.auto">true</entry>
+	<entry key="orm.jpa.vendor">MYSQL</entry>
+</properties>
