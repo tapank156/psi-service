@@ -11,6 +11,4 @@ public interface UserService {
 	public List<User> getUsers();
 
 	public User getUserByUserId(String userId);
-
-	//public Set<Role> getUserRolesbyUserId(String userId);
 }
