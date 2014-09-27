@@ -32,7 +32,6 @@ public class LoginController {
 
 	@RequestMapping(method=RequestMethod.GET)
 	public String loginForm(ModelMap modelMap) throws Exception {
-		System.out.println("Loading form ....");
 		modelMap.addAttribute("user", new AuthUser(0L, "", "", ""));
 		return "login";
 	}
@@ -45,24 +44,4 @@ public class LoginController {
 		}
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
-	
-//	@RequestMapping(method=RequestMethod.POST, value="/verify")
-//	public ResponseEntity<User> verifyUser(@Valid @RequestBody  AuthUser user) throws Exception {
-//		if(user != null)
-//			System.out.println("Received form ...." + user.toString());
-//		else
-//			System.out.println("Not Received form ....");
-//		
-//		AuthUser ausr = loginService.verifyUser(user.getUserName(), user.getPassword());
-//		User usr = null;
-//		if(ausr != null){
-//			usr = userService.getUserByUserId(ausr.getUserId());
-//		}
-//    	HttpHeaders httpHeaders = new HttpHeaders();
-//    	httpHeaders.add("Access-Control-Allow-Origin", "*");
-//    	System.out.println("User Details ...." + usr.toString());
-//    	return new ResponseEntity<User>(usr, httpHeaders, HttpStatus.OK);    	
-//	}
-
-	
 }
